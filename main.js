@@ -1,5 +1,5 @@
 $(function() {
-	var app_id = '884000378351637';
+	var app_id = 'XXXXXXXXXXXXXXX'; //Your app ID
 	var scopes = 'email, user_friends, user_online_presence, public_profile';
 	var btn_login = '<a href="#" id="login" class="btn btn-primary">Iniciar sesión</a>';
 	var div_session = "<div id='facebook-session'>"+
