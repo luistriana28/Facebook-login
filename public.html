@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Facebook Login</title>
+        <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script src="main.js"></script>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+        <link href="main.css" rel="stylesheet">
+    </head>
+    <body>
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4&appId=884000378351637";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+        </script>
+        <div class="fb-like" data-href="https://www.facebook.com/groups/Ofertastorreon.com.mx2/" data-layout="standard" data-action="like" data
+             show-faces="true" data-share="false"></div>
+        <br>
+        <br>
+        <div class="fb-send" data-href="https://www.facebook.com/groups/Ofertastorreon.com.mx2/"></div><br>
+        <br>
+        <div class="fb-group" data-href="https://www.facebook.com/groups/Ofertastorreon.com.mx2/" data-small-header="false" data-adap container
+             width="true" data-hide cover="false" data-show-facepile="true" data-show-posts="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/groups/Ofertastorreon.com.mx2"><a href="https://www.facebook.com/groups/Ofertastorreon.com.mx2">OfertasTorreon</a></blockquote></div></div>
+        <script>
+            FB.api('/366223203442401/feed', 'post', opts, function(response)
+            {
+                if (!response || response.error)
+                {
+                    alert('Posting error occured');
+                }
+                else
+                {
+                    alert('Success - Post ID: ' + response.id);
+                }
+            });
+        }
+        else
+        {
+            alert('Not logged in');
+        }
+        </script>
+        <div class="fb-follow" data-href="https://www.facebook.com/lmtriana" data-layout="standard" data-show-faces="true"></div>
+    </body>
+</html>
